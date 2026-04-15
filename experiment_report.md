@@ -1,8 +1,8 @@
 # Experiment Report: Data Quality Impact on AI Agent
 
-**Student ID:** AI20K-XXXX
-**Name:** (Dien ten cua ban)
-**Date:** (Dien ngay thuc hien)
+**Student ID:** 2A202600140
+**Name:** Nguyễn Công Hùng
+**Date:** 15/04/2026
 
 ---
 
@@ -12,8 +12,8 @@ Chay `agent_simulation.py` voi 2 bo du lieu va ghi lai ket qua:
 
 | Scenario | Agent Response | Accuracy (1-10) | Notes |
 |----------|----------------|-----------------|-------|
-| Clean Data (`processed_data.csv`) | (Ghi cau tra loi cua Agent) | | |
-| Garbage Data (`garbage_data.csv`) | (Ghi cau tra loi cua Agent) | | |
+| Clean Data (`processed_data.csv`) | Based on my data, the best choice is Laptop at $1200. | | |
+| Garbage Data (`garbage_data.csv`) | Based on my data, the best choice is Nuclear Reactor at $999999. | | |
 
 ---
 
@@ -21,10 +21,7 @@ Chay `agent_simulation.py` voi 2 bo du lieu va ghi lai ket qua:
 
 ### Tai sao Agent tra loi sai khi dung Garbage Data?
 
-(Viet nhan xet cua ban o day — it nhat 50 tu)
-
-(Hay phan tich cac van de nhu Duplicate IDs, wrong data types, outliers, null values
-va giai thich tai sao chung anh huong den ket qua cua Agent.)
+Nhận xét: các vấn đề như Duplicate IDs, wrong data types, outliers, null values đã làm cho dữ liệu trở nên không đáng tin cậy. Điều này dẫn đến việc Agent đưa ra quyết định sai lầm vì nó dựa trên dữ liệu không chính xác hoặc không đầy đủ. Ví dụ, nếu có nhiều bản ghi trùng lặp với cùng một ID, Agent có thể bị nhầm lẫn và không biết nên tin vào bản ghi nào. Nếu dữ liệu có kiểu sai, Agent có thể không hiểu được thông tin và đưa ra kết quả không hợp lý. Outliers có thể làm lệch kết quả phân tích và null values có thể khiến Agent thiếu thông tin quan trọng để đưa ra quyết định đúng đắn.
 
 ---
 
@@ -33,3 +30,5 @@ va giai thich tai sao chung anh huong den ket qua cua Agent.)
 **Quality Data > Quality Prompt?** (Dong y hay khong? Giai thich ngan gon.)
 
 (Viet ket luan cua ban o day)
+
+Tôi đồng ý rằng chất lượng dữ liệu quan trọng hơn chất lượng prompt. Một prompt tốt có thể giúp hướng dẫn Agent, nhưng nếu dữ liệu mà Agent dựa vào để đưa ra quyết định là không chính xác hoặc không đầy đủ, thì ngay cả một prompt tốt cũng không thể cứu vãn được kết quả. Chất lượng dữ liệu là nền tảng cho mọi phân tích và quyết định mà Agent đưa ra, vì vậy đảm bảo dữ liệu sạch và đáng tin cậy là điều cần thiết để đạt được kết quả chính xác và hữu ích.
